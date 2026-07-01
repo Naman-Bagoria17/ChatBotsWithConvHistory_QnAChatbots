@@ -1,0 +1,11 @@
+----what are retreivers---------
+In langChain,retrievers are nothing but an abstraction layer that is used to retrieve documents from a vector store. In other words, retreivers fetch the relevant chunks of documents from the vector store based on the similarity between the query and the documents.
+
+----why do we need retreivers---------
+A Runnable is any LangChain component that can perform a task when given an input. For example, a model, prompt, or retriever is a Runnable because you can call methods like invoke() on it. LCEL chains can only connect components that are Runnables.
+
+A VectorStore is used to store and search documents, but it is not a Runnable. This means it cannot be directly added to an LCEL chain. A Retriever wraps the VectorStore and makes it a Runnable, so it can accept an input query, search the VectorStore, and return the most relevant documents. Since it is a Runnable, it also supports methods like invoke(), ainvoke(), and batch(), making it easy to connect with other components in an LCEL chain.
+
+
+----create_stuff_documents_chain-----
+`create_stuff_documents_chain(llm,prompt)` is used to create a chain that **combines all retrieved documents and summarizes them into context to form a single prompt using chatPromptTemplate** and sends them to the LLM. It "stuffs" (puts) the retrieved document contents together with the user's question, allowing the model to generate an answer based only on that provided context. It is commonly used in RAG pipelines after the retriever fetches relevant documents.

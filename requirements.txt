@@ -1,0 +1,15 @@
+#not all are needed but still some.
+langchain
+python-dotenv
+ipykernel
+langchain-groq
+langchain-openai
+langchain_core
+langchain-community
+langchain-chroma
+lanchain-huggingface
+transformers==4.57.1
+sentence-transformers==5.1.0
+openai
+bs4
+langchain-classic
