@@ -192,13 +192,6 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 4.  Push to the Branch (`git push origin feature/AmazingFeature`)
 5.  Open a Pull Request
 
----
-
-## 📄 License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
 ## ✍️ Author
-*   **Your Name / GitHub Profile** - *AI Engineer & Explorer*
-*   Feel free to reach out on [LinkedIn](https://linkedin.com) or [Twitter](https://twitter.com).
+*   **Naman-Bagoria17** - *AI Engineer & Explorer*
+*   Feel free to reach out on [LinkedIn](https://www.linkedin.com/in/naman-bagoria/).
